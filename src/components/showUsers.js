@@ -25,7 +25,7 @@ class showUsers extends Component{
 
     deleteStudent(email) {
         console.log(email)
-        axios.delete(`http://3.6.93.159:7883/machstatz/delete_existing_user/${email}`,{headers: {
+        axios.delete('http://3.6.93.159:7883/machstatz/delete_existing_user/${email}',{headers: {
             'Access-Control-Allow-Origin': '*',
             'Content-Type': 'application/json',
           }})
@@ -74,8 +74,8 @@ class showUsers extends Component{
 					</div>
 				</div>
 			</div>
-                        </div>*/}
-		</div>
+                        </div>*/ } 
+						</div> 
 		);
 	}
 }
